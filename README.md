@@ -10,8 +10,9 @@ Steps for analysis of Hi-ChIP data using HiC Pro:
   
  ## Installation and use  ##
 Hi-C Pro can be installed here from https://github.com/nservant/HiC-Pro
+
  
- 
+Download the singularity shell: https://zerkalo.curie.fr/partage/HiC-Pro/singularity_images/hicpro_latest_ubuntu.img
 Using singularity shell on darwin
 
  ```bash
