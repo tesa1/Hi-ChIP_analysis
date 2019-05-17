@@ -13,9 +13,13 @@ Hi-C Pro can be installed here from https://github.com/nservant/HiC-Pro
 
  
 Download the singularity shell: https://zerkalo.curie.fr/partage/HiC-Pro/singularity_images/hicpro_latest_ubuntu.img
-Using singularity shell on darwin
+Move fastq samples into folder h3k27ac_rawdata. Change config file to suit the necessary requirements.
+
+Using singularity image file on darwin
 
  ```bash
  singularity shell hicpro_latest_ubuntu.img
- HiC-Pro -h
+ HiC-Pro -i h3k27ac_rawdata/ -o h3k27ac_outputs -c config-hicpro.txt
 ```
+
+
