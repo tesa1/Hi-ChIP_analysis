@@ -11,7 +11,7 @@ Steps for analysis of Hi-ChIP data using HiC Pro:
  ## Installation and use  ##
 Hi-C Pro can be installed here from https://github.com/nservant/HiC-Pro
 
-On darwin, using downloaded version of HiC-Pro.2.11 from https://github.com/nservant/HiC-Pro/releases and installed in /home/t.seversontools/HiC-Pro-2.11.1.install/bin/. Config file was changed to suit the necessary requirements (bowtie2 and samtools 1.9 locations).
+On darwin, using downloaded version of HiC-Pro.2.11 from https://github.com/nservant/HiC-Pro/releases and installed in /home/t.severson/tools/HiC-Pro-2.11.1.install/bin/. Config file was changed to suit the necessary requirements (bowtie2 and samtools 1.9 locations).
 
 Move fastq sample folders into folder h3k27ac_rawdata. 
 
