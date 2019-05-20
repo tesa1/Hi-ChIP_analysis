@@ -11,15 +11,12 @@ Steps for analysis of Hi-ChIP data using HiC Pro:
  ## Installation and use  ##
 Hi-C Pro can be installed here from https://github.com/nservant/HiC-Pro
 
- 
-Download the singularity image file: https://zerkalo.curie.fr/partage/HiC-Pro/singularity_images/hicpro_latest_ubuntu.img
-Move fastq sample folders into folder h3k27ac_rawdata. Change config file to suit the necessary requirements.
+On darwin, using downloaded version of HiC-Pro.2.11 from https://github.com/nservant/HiC-Pro/releases and installed in /home/t.seversontools/HiC-Pro-2.11.1.install/bin/. Config file was changed to suit the necessary requirements (bowtie2 and samtools 1.9 locations).
 
-Using singularity shell to run image file on darwin
+Move fastq sample folders into folder h3k27ac_rawdata. 
 
  ```bash
- singularity shell hicpro_latest_ubuntu.img
- HiC-Pro -i h3k27ac_rawdata/ -o h3k27ac_outputs -c config-hicpro.txt
+/home/t.seversontools/HiC-Pro-2.11.1.install/bin/HiC-Pro -i h3k27ac_rawdata/ -o h3k27ac_outputs -c config-hicpro.txt
 ```
 
 
