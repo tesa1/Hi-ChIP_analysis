@@ -16,7 +16,7 @@ On darwin, using downloaded version of HiC-Pro.2.11 from https://github.com/nser
 Move fastq sample folders into folder h3k27ac_rawdata. 
 
  ```bash
-/home/t.seversontools/HiC-Pro-2.11.1.install/bin/HiC-Pro -i h3k27ac_rawdata/ -o h3k27ac_outputs -c config-hicpro.txt
+/home/t.severson/tools/HiC-Pro-2.11.1.install/bin/HiC-Pro -i h3k27ac_rawdata/ -o h3k27ac_outputs -c config-hicpro.txt
 ```
 
 This will create h3k27ac_outputs folder with mapping and HiC analysis results
