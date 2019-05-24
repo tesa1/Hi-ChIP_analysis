@@ -20,3 +20,26 @@ Move fastq sample folders into folder h3k27ac_rawdata.
 ```
 
 This will create h3k27ac_outputs folder with mapping and HiC analysis results
+
+
+ ## Running a downsample experiment on the data ##
+ 
+Need to use HTSeq to downsample the paired-end fastq files 
+
+```bash
+# install htseq with bioconda
+conda create -c bioconda --name htseq htseq
+conda activate htseq
+```
+
+For downsampling to 25% of reads
+```bash
+gunzip sample_R1.fastq.gz
+gunzip sample_R1.fastq.gz
+python subsample.py 0.25 sample_R1.fastq sample_R2.fastq sample_R1_ds25.fastq sample_R2_ds25.fastq
+gzip -c sample_R1_ds25.fastq > sample_R1_ds25.fastq.gz
+gzip -c sample_R2_ds25.fastq > sample_R2_ds25.fastq.gz
+```
+
+
+
