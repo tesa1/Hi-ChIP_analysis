@@ -22,6 +22,7 @@ Move fastq sample folders into folder h3k27ac_rawdata.
 This will create h3k27ac_outputs folder with mapping and HiC analysis results
 
 
+
  ## Running a downsample experiment on the data ##
  
 Need to use HTSeq to downsample the paired-end fastq files 
@@ -42,4 +43,9 @@ gzip -c sample_R2_ds25.fastq > sample_R2_ds25.fastq.gz
 ```
 
 
+Run HiC-Pro on the downsampled samples
+
+```bash
+/home/t.severson/tools/HiC-Pro-2.11.1.install/bin/HiC-Pro -i ds_25/ -o ds_25_outputs -c config-hicpro.txt
+````
 
