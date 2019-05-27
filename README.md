@@ -63,8 +63,10 @@ gzip -c sample_R1_ds25.fastq > sample_R1_ds25.fastq.gz
 gzip -c sample_R2_ds25.fastq > sample_R2_ds25.fastq.gz
 ```
 
+The subsample.py script is from the developer of HTSeq http://seqanswers.com/forums/archive/index.php/t-12070.html: 
+It will throw a StopIteration error but the files will be fine.
 
-Run HiC-Pro on the downsampled samples
+Next, run HiC-Pro on the downsampled samples
 
 ```bash
 /home/t.severson/tools/HiC-Pro-2.11.1.install/bin/HiC-Pro -i ds_25/ -o ds_25_outputs -c config-hicpro.txt
