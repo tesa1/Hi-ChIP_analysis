@@ -49,3 +49,18 @@ Run HiC-Pro on the downsampled samples
 /home/t.severson/tools/HiC-Pro-2.11.1.install/bin/HiC-Pro -i ds_25/ -o ds_25_outputs -c config-hicpro.txt
 ````
 
+# Analyze HiC-Pro output using hichipper 
+
+Install hichipper using instructions from: https://hichipper.readthedocs.io/en/latest/
+
+```bash
+virtualenv -p /usr/bin/python2.7 venv
+source venv/bin/activate
+pip install hichipper
+hichipper --version
+```
+
+Run hichipper on the h3k27ac_outputs folder from HiC-Pro.
+```bash
+hichipper --out h3k27ac_hichipper --make-ucsc  hichipper.yaml
+```
