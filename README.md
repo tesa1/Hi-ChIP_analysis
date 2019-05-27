@@ -27,7 +27,7 @@ This will create h3k27ac_outputs folder with mapping and HiC analysis results
 Steps for analyzing of Hi-ChIP data from HiC Pro using hichipper using a sample manifest file (.yaml).
 Using called peaks and restriction fragment locations as input and the output from HiC-Pro output that can be used to:
   - Determine library quality
-  - Visualize loops with strength andconfidence metrics
+  - Visualize loops with strength and confidence metrics
 
 Install hichipper using instructions from: https://hichipper.readthedocs.io/en/latest/
 
