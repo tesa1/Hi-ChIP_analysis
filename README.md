@@ -24,7 +24,7 @@ This will create h3k27ac_outputs folder with mapping and HiC analysis results
 
 ## Installation and use of hichipper for HiC-Pro results ##
 
-Steps for analyzing of Hi-ChIP data from HiC Pro using hichipper using a sample manifest file (.yaml).
+Steps for analyzing of Hi-ChIP data from HiC Pro using hichipper using a sample manifest file (.yaml). Hichipper uses macs2 to call peaks. I generated peaks using the Mubach method (i.e. EACH,ALL).
 Using called peaks and restriction fragment locations as input and the output from HiC-Pro output that can be used to:
   - Determine library quality
   - Visualize loops with strength and confidence metrics
