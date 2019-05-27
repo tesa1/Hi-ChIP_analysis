@@ -1,0 +1,6 @@
+peaks:
+  - EACH,ALL
+resfrags:
+  - /home/t.severson/resources/hg19_mboi.bed.gz
+hicpro_output:
+  - h3k27ac_outputs
